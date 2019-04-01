@@ -24,8 +24,8 @@ class Patient
   end 
   
    def doctors 
-    Appointment.all do |song|
-      song.artist
+    Appointment.all select do |appointments|
+      appointments.doctors == self
     end 
   end 
 
