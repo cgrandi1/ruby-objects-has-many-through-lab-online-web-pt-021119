@@ -18,6 +18,8 @@ class Doctor
   end
   
   def appointments
-    Appointment.all.select do |appointment|
-      appointment.doctor
+    Appointment.all.select do |appointments|
+      appointments.doctor
+    end 
+  end 
 end 
